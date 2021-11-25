@@ -4,6 +4,29 @@
     list-style: none;
 }
 
+/* .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 27, 27);
+  font-family: "Work Sans", sans-serif;
+  color: #009888;
+  background-color: #009888;
+}
+header {
+  width: 94%;
+  font-family: droid-sans, sans-serif;
+  padding: 24px 20px;
+  color: white;
+  margin: 0 auto;
+}
+/*list styles */
+
 .container {
     display: flex;
     align-items: stretch;
@@ -12,21 +35,17 @@
     width: 96.5%;
     height: 50vh;
     overflow: auto;
+    overflow: ;
   }
 
-header {
-    width: 94%;
-    font-family: droid-sans, sans-serif;
-    padding: 24px 20px;
-    color: white;
-    margin: 0 auto;
-  }
+/*meterlos en el container*/
 
 h2 {
   font-family: droid-sans, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 20px;
+  
 }
 
 ul {
@@ -80,22 +99,44 @@ ul li:hover {
   color: #b1e0dc;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+
+/*display style */
+
+.console-container {
+    border: 5px solid #009888;;
+    min-width: 457px;
+    width: 30%;
+    height: 100%;
+    background-color:  #01201c;;
+    /* display: flex;
+    flex-direction: row; */
+    /* min-height: 257px;  */
   }
   
-body {
+.side-console-container {
     width: 100%;
-    height: 100%;
-    background-color: rgb(27, 27, 27);
-    font-family: "Work Sans", sans-serif;
-    color: #009888;
-    background-color: #009888;
+    height: 50%;
+    overflow: hidden;
+    min-height: 157px;
+    min-width: 300px;
+  }
+  
+.side-console-container:first-child {
+    border-bottom: 2.5px solid #009888;;
+  }
+  
+.side-console-container:last-child {
+    border-top: 2.5px solid #009888;
   }
 
 
-  --bg: #009888;
-  --dark_color: #01201c;
-  --light_color: #b1e0dc;
+section {
+display: flex;
+flex-direction: row;
+border: 2%;
+align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 96.5%;
+    height: 50vh;
+}
