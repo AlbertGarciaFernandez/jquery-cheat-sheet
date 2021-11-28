@@ -13,7 +13,7 @@ functionschangeselect.each(function(i, element){
 //case 0-9
 selectorschangeselect.each(function(i, element){
     $(element).on("click",function(){
-        vanillaJavaScript(i);
+        vanillaJavaScriptselectors(i);
         jQueryScript(i);
     });
 });
@@ -21,7 +21,7 @@ selectorschangeselect.each(function(i, element){
 //case 0-12
 eventschangeselect.each(function(i, element){
     $(element).on("click",function(){
-        vanillaJavaScript(i);
+        vanillaJavaScriptevents(i);
         jQueryScript(i);
     });
 });
